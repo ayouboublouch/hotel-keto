@@ -1,12 +1,4 @@
-<script>
-   function scrollToOurRoom() {
-      const ourRoom = document.getElementById('our_room');
-      ourRoom.scrollTo({
-         top: ourRoom.offsetTop,
-         behavior: 'smooth'
-      });
-   }
-</script>
+
 
 
 <section class="banner_main">
@@ -56,8 +48,8 @@
                            <img class="date_cua" src="images/date.png">
                            <input class="online_book" placeholder="dd/mm/yyyy" type="date">
                         </div>
-                        <div class="col-md-12">
-                           <button class="book_btn" onclick="scrollToOurRoom()">Book Now</button>
+                        <div class="col-md-12" href="{{url('our_rooms')}}">
+                           <button class="book_btn" ><a href="{{url('our_rooms')}}">Book Now</a></button>
                         </div>
                      </div>
                   </form>

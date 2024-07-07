@@ -2,10 +2,13 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\About;
 use Illuminate\Http\Request;
 use App\Models\Room;
 use App\Models\Booking;
 use App\Models\Contact;
+use App\Models\Gallary;
+
 class HomeController extends Controller
 {
     public function room_details($id){
@@ -63,5 +66,25 @@ class HomeController extends Controller
         return redirect()->back()->with('message','Message Sent Successfully');
         
 
+    }
+    public function our_rooms(){
+        $room=Room::all();
+
+        return view('home.our_rooms', compact('room'));
+    }
+    public function hotel_gallery(){
+        $gallery= Gallary::all();
+
+        return view('home.hotel_gallery',compact('gallery'));
+    }
+    public function contact_us(){
+        $contact= Contact::all();
+
+        return view('home.contact_us',compact('contact'));
+    }
+    public function about_us(){
+        $about = About::all();
+
+        return view('home.about_us',compact('about'));
     }
 }

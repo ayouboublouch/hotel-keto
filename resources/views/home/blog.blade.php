@@ -4,7 +4,7 @@
                <div class="col-md-12">
                   <div class="titlepage">
                      <h2>Blog</h2>
-                     <p>Lorem Ipsum available, but the majority have suffered </p>
+                     <p>Checking In: Discovering Luxury at Keto</p>
                   </div>
                </div>
             </div>
