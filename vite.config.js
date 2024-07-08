@@ -5,10 +5,13 @@ export default defineConfig({
     plugins: [
         laravel({
             input: [
-                'resources/css/app.css',
-                'resources/js/app.js',
+                'esources/css/app.css',
+                'esources/js/app.js',
             ],
             refresh: true,
         }),
     ],
+    build: {
+        outDir: 'dist', // Add this line to specify the output directory
+    },
 });
